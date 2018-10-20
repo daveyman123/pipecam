@@ -23,9 +23,11 @@ def takePhoto(path):
 	try:
 		cmd = "raspistill -hf -vf -ex beach -o %s" % file_name
 		os.system(cmd)
-		global done = 1
+		global done
+		done = 1
 	except:
-		global done = 0
+		global done
+		done = 0
 		print "\033[31m Error! could not take video\033[0m"
 
 ################################################################################################################################
@@ -45,9 +47,11 @@ def takeVideo(path):
 	# try:
 	# 	cmd = "raspivid %s -vf %s %s %s -o %s.h264 " %(t,ex,w,h,file_name)
 	# 	os.system(cmd)
-	#   global done = 1
+	#   	global done
+	#	done = 1
 	# except:
-	# 	global done = 0
+	#   	global done
+	#	done = 0
 	# 	print "\033[31m Error! could not take video\033[0m"
 	print "\033[31m Error! Video code not enabled. No action taken. \033[0m"
 
