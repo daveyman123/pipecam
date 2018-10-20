@@ -1,6 +1,12 @@
 #!/usr/bin/env
+# (!Very much still under development!)
+# This is the main pipecam software for the TPL5111 PipeCam
+# Takes a photo, then pulls a GPIO pin high to trigger a non-safe shutdown.
+#
+# Related to:
+# https://hackaday.io/project/21222-pipecam-low-cost-autonomous-underwater-camera
+# Author - Fred Fourie
 
-# This is the main pipecam software for the TPL5111 PipcCam
 import os
 from time import gmtime, strftime
 import RPi.GPIO as GPIO
@@ -67,7 +73,8 @@ def powerOff():
 
 
 if __name__ == "__main__":
-    # Some UI and output
+# Start here
+
     # Nice little headertjie
 	print '\033[37m                                                  \033[0m'
 	print '\033[37m                .:oyhdddddddhyo/-                 \033[0m'
@@ -97,7 +104,7 @@ if __name__ == "__main__":
 	print ""
 	print "\033[34m TPL5111 Pipecam base script\033[0m"
 	print ""
-    #End of nice little headertjie
+        #End of nice little headertjie
 
 	# Start here
 	# Set the mode of the pipecam. 0 for photos, 1 for videos
