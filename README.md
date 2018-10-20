@@ -1,3 +1,7 @@
+
+                                                  
+
+# Pipecam
                                                                                                     
                 .:oyhdddddddhyo/-                 
             `/ymho/-`       `.:+ymh+.             
@@ -21,8 +25,5 @@
             :smMMMMMMMMMMMMMMMMMMMNh/`            
                ./shmMMMMMMMMMNdy+-`               
                      `..-..`                      
-                                                  
-
-# Pipecam
 This repo is for public access pipecam related scripts and software
 https://hackaday.io/project/21222-pipecam-low-cost-autonomous-underwater-camera
